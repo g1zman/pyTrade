@@ -17,20 +17,21 @@ with open("ranData.txt","r",encoding="utf-8") as file:
             numbers = numbers.strip()
             number_list = list(map(float,numbers.split(" ")))
             data[key] = number_list
+            print("market added: " + key)
             print(data)
-            index = 1
-            values_at_index = [number_list[index] for number_list in data.values() if len(data) > index]
+            index = int(input("Enter the required index:"))
+            values_at_index = [number_list[index] for number_list in data.values() if len(number_list) > index]
             if values_at_index:
                 lowcost = min(values_at_index)
                 highcost = max(values_at_index)
-                print(f"Наименьшая цена по индексу {index}:", lowcost)
-                print(f"Наибольшая цена по индексу {index}:", highcost)
-                print(f"Потенциальный спред по индексу {index}:", highcost - lowcost)
+                print(f"Highest price on index {index}:", highcost)
+                print(f"Lowest price on index  {index}:", lowcost)
+                print(f"Potential spread on index {index}:", highcost - lowcost)
             else:
-                print(f"Недостаточно данных по индексу {index}")
+                print(f"Insufficient data on index {index}")
                 # классы читать
                 # массивы
-                # git + github
+                # git + github DONE
                 #
            # lowcost = min(data)
             #highcost = max(data)
