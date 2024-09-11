@@ -24,15 +24,16 @@ with open("ranData.txt","r",encoding="utf-8") as file:
             if values_at_index:
                 lowcost = min(values_at_index)
                 highcost = max(values_at_index)
-                print(f"Highest price on index {index}:", highcost)
-                print(f"Lowest price on index  {index}:", lowcost)
+                print(f"Highest price on index {index}:", highcost, "on market:",)
+                print(f"Lowest price on index {index}:", lowcost, "on market:",)
                 print(f"Potential spread on index {index}:", highcost - lowcost)
             else:
                 print(f"Insufficient data on index {index}")
                 # классы читать
                 # массивы
                 # git + github DONE
-                #
+                # add time - index correlation. add hc lc - market connection - ??
+                # 06.09. 24
            # lowcost = min(data)
             #highcost = max(data)
             #print("Наименьшая цена:", lowcost)
