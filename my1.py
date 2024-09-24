@@ -31,13 +31,13 @@ with open("ranData.txt","r",encoding="utf-8") as file:
                 for l in values_at_index:
                     if l > maxx:
                         maxx = l
-                print(f"Highest price on index {index}:", maxx, "on market:",)
+                print(f"Highest price on index {index}:", maxx, "on market:", # здесь нужна помощь. не могу понять какой аргумент сюда закинуть чтоб вывести key макс значения)
                 print(f"Lowest price on index {index}:", minn, "on market:",)
                 print(f"Potential spread on index {index}:", maxx - minn)
             else:
                 print(f"Insufficient data on index {index}")
-                # классы читать
-                # массивы
+                # классы читать. ознакомлен, не понял зачем
+                # массивы ознакомлен?
                 # git + github DONE
                 # add time - index correlation. add hc lc - market connection - ??
                 # 06.09. 24_
